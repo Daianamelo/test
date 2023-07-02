@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Formulario de registro</h1> 
+    <!-- pongo el metodo y una web falsa -->
+    <form method="post" action="/mandar-datos" name="miFormulario"> 
+        <!-- fielset para separar las partes que tienen algo en comun -->
+        <fieldset>
+            <!-- label se usa para mejorar la accesibilidad lo pueden leer los lectores de pantalla -->
+            <!-- input crea el campo donde el usuario pone los datos, el atributo name es para cuando se envian los datos al servidor osea se envia nombre del campo y el valor que puso el usuario ej: nombre/fulanito. La id es para css  -->
+            <!-- el required es un atributo que hace que el formulario no se puede enviar sino esta completo el input que lo posee -->
+            <label for="nombre">Nombre: <input id="nombre" name="nombre" type="text" required/></label>
+            <label for="apellidos">Apellidos: <input  id="apellidos" name="apellidos" type="text" required/></label>
+           <label for="sexo">sexo: 
+            <!-- aca les pongo el mismo name porque asi solo te deja elegir uno, si le pusiera dos names distintos me dejaria marcar las dos opciones a la vez -->
+            <label for="hombre"><input class="inline" type="radio" id="hombre" name="sexo"/>Hombre</label>
+            <label for="mujer"><input class="inline" type="radio" id="mujer" name="sexo"/>Mujer</label>
+           </label>
+           <label for="correo">Correo: <input id="correo" name="correo" type="email" required></label>
+
+        </fieldset>
+        <fieldset>
+           <label for="novedades">
+                <input class="inline" type="checkbox" id="novedades" name="novedadesyterminos"/>Deseo recibir informacion sobre novedades y ofertas
+                </label>
+                <label for="terminos"><input class="inline" type="checkbox" id="terminos" name="novedadesyterminos" required />Declaro haber leído y aceptar las condiciones generales del programa y la normativa sobre la protección de datos</label>
+        </fieldset>
+        <input type="submit" value="Enviar" />
+
+    </form>
+</body>
+</html>

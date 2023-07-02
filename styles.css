@@ -1,0 +1,84 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: #1b1b32;
+    color: #f5f6f7;
+    font-family: Tahoma;
+    font-size: 16px;
+  }
+
+  
+h1{
+    margin: 1em auto;
+    text-align: center;
+  }
+
+  
+form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding:2em;
+  }
+
+  fieldset {
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 3px solid #3b3b4f;
+  }
+
+
+  /* last-of-type sirve cuando tenes varios elementos iguales
+  y queres aplicar estilos específicos al último de ellos */
+  fieldset:last-of-type {
+    border-bottom: none;
+  }
+
+  label {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  input {width:100%;
+    margin-top:10px;
+    margin-bottom:0px;
+    margin-left:0px;
+    margin-right:0px;
+    background-color: #0a0a23;
+    border:1px solid #0a0a23;
+    min-height:2em;
+    color:#ffffff;}
+
+    .inline {
+        width: unset;
+        margin-right:0.5em;
+        margin-left:0;
+        margin-top:0;
+        margin-bottom:0;
+        vertical-align:middle;
+      }
+
+
+      /* unset sirve para  restaurar a los valores originales  */
+    #hombre, #mujer{display: unset;
+   }
+
+
+   /* esto es un selector de CSS que es para seleccionar 
+   y aplicar estilos al elemento <input> de tipo "submit".
+   se puede usar con lo que sea
+   solo elegis un elemento y un atributo de él
+   y seguis esta sintaxis igual*/
+   input[type="submit"]{display:block;
+    width:60%;
+    margin: 0 auto;
+    height:2em;
+    font-size:1.1rem;
+    background-color:#3b3b4f;
+    border-color:white;
+    margin-top:1em;
+    margin-bottom:1em;
+    min-width:300px;
+}
